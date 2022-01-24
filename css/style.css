@@ -231,6 +231,29 @@ h1, h2, h3 {
     background-color: #000;
 }
 
+#insta{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/LRM_EXPORT_20170706_210016.jpg') center/cover no-repeat fixed;
+    min-height: 65vh;
+}
+#insta .title h2{
+    color: var(--light-color);
+}
+#insta .title h2::after{
+    background-color: var(--light-color);
+}
+.insta-grid > div{
+    height: 400px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.insta-grid > div img{
+    height: 100%;
+    object-fit: cover;
+}
+.insta-grid > div:hover{
+    transform: scale(0.9);
+}
+
 
 /*Media Queries*/
 @media(min-width: 576px){
@@ -261,9 +284,22 @@ h1, h2, h3 {
     .contact-left{
         width: 50%;
     }
+    .insta-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 /*adjusts image to contact me*/
 }
+@media(min-width: 992px){
+    .insta-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .insta-grid > div{
+        height: 250px;
+    }
+}
+
+
 /*education buttons*/
 @media(min-width: 450px){
     .work-bottom{
