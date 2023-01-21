@@ -300,43 +300,6 @@ h1, h2, h3 {
     }
 }
 
-@media(min-width: 768px){
-    .header-content h1{
-        font-size: 7rem;
-    }
-    .about-content, .work-top{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 6rem;
-        row-gap: 0;
-    }
-    .about-left{
-        margin-bottom: 0;
-    }
-    .contact-content{
-        flex-direction: row;
-    }
-    .contact-right{
-        padding-left: 3rem;
-        width: 50%;
-    }
-    .contact-left{
-        width: 50%;
-    }
-    .insta-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-/*adjusts image to contact me*/
-}
-@media(min-width: 992px){
-    .insta-grid{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .insta-grid > div{
-        height: 250px;
-    }
-}
-
 
 /*education buttons*/
 @media(min-width: 450px){
@@ -374,6 +337,51 @@ h1, h2, h3 {
 
 }
 
+@media(min-width: 768px) {
+    .header-content h1 {
+        font-size: 7rem;
+    }
+
+    .about-content,
+    .work-top {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+        row-gap: 0;
+    }
+
+    .about-left {
+        margin-bottom: 0;
+    }
+
+    .contact-content {
+        flex-direction: row;
+    }
+
+    .contact-right {
+        padding-left: 3rem;
+        width: 50%;
+    }
+
+    .contact-left {
+        width: 50%;
+    }
+
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+/*adjusts image to contact me*/
+
+@media(min-width: 992px) {
+    .insta-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .insta-grid>div {
+        height: 250px;
+    }
+}
 
 @media(min-width: 1200px){
     .portfolio-grid{
