@@ -157,6 +157,8 @@
                         <form action="">
                             <input type = "text" class = "form-control" placeholder="Your name here ...">
                             <input type = "email" class = "form-control" placeholder="Your email here">
+                            <input type = "phone" class = "form-control" placeholder="Your phone number here">
+                            <textarea type = "text" class = "form-control" placeholder="Your message here"></textarea>
                             <input type = "submit" class = "btn-submit btn" value = "Submit">
                         </form>
                     </div>
@@ -216,5 +218,31 @@
     <!-- end of footer -->
     <!--- typewriting js-->
     <script src = "typewriting-master/typewriting.js"></script>
+    <script src="https://www.twilio.com/libs/twilio/2.0.0/twilio.min.js"></script>
+    <script>
+        const accountSid = 'AC154c670275a78614f800a34a12bb24b6';
+        const authToken = '47d399ba1615ecc05f71309a537e2d51';
+        const client = require('twilio')(accountSid, authToken);
+
+        const form = document.getElementById('my-form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const name = document.getElementById('name-input').value;
+                const email = document.getElementById('email-input').value;
+                const phone = document.getElementById('phone-input').value;
+                const message = document.getElementById('message-input').value;
+                const body = `New form submission from ${name} with email ${email} phone number ${phone} and message ${message}`;
+
+                client.messages
+                    .create({
+                        body: body,
+                        from: '+17853903789',
+                        to: '+14692749333'
+                    })
+                    .then(message => console.log(message.sid));
+            });
+
+
+    </script> 
 </body>
 </html>
