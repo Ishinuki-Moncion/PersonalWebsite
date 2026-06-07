@@ -25,7 +25,7 @@
                 <!--typewriter javascript plug in allows for the data loop effect -->
                 <h1>I'm an <br><span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000"
                         data-words='["developer", "photographer", "entrepreneur"]'></span></h1>
-                <h3>Daikie Moncion</h3>
+                <h3>Ishinuki Daikie</h3>
 
                 <ul class="social-links">
                     <li>
@@ -62,14 +62,16 @@
                         <div class="title">
                             <h2>About Me</h2>
                         </div>
-                        <p class="lead">I'm a software developer and an artist based in Dallas, TX where I have earned a
-                            Bachelor's in Computer Science at The University of Texas at Dallas. As a hobby I combine
-                            code with my interests in photography to find the right balance between creativity and
-                            commercial sense. My second passion lies in blockchain and understanding decentralized
-                            autonomous organizations, web3, NFT's, and smart contracts. This world keeps me inspired to
-                            contribute back to the world as a creator.</p>
-                        <p class="lead">You can checkout my previous works and experiences below. I consider photography
-                            as a passion more than a profession.</p>
+                        <p class="lead">I'm Ishinuki Daikie, a software developer and artist based in Tokyo by way of
+                            Dallas. I earned a B.S. in Computer Science at The University of Texas at Dallas, then
+                            studied Japan Studies at Soka University in Tokyo. Today I'm a Technical Producer at SeenThis
+                            Japan, where I build and convert advertising materials into open-web digital ad banners with
+                            HTML, CSS, and JavaScript, having carried 100+ campaigns from creation to execution.</p>
+                        <p class="lead">I work across the stack — React, Next.js, Node, and PostgreSQL — and I speak
+                            native English and conversational Japanese (JLPT N3). Before SeenThis I contracted in
+                            front-end development and taught JavaScript to high-school students at All Star Code in NYC.
+                            Photography is a serious passion, and the gallery below is part of how I keep code and visual
+                            art in the same conversation.</p>
                         <a href="#work" class="btn-down">
                             <i class="fas fa-chevron-down"></i>
                         </a>
@@ -264,26 +266,6 @@
             </div>
         </section>
         <!-- end of contact section -->
-        <!--instagram section-->
-        <section id="insta" class="py-7">
-            <div class="container">
-                <div class="insta-content">
-                    <div class="title">
-                        <h2>instagram</h2>
-                        <a href="#footer" class="btn-down btn-down-white">
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                    </div>
-                    <div class="insta-grid grid">
-                        <div><img src="images/20987136_835508806626078_8984513465116786688_n.jpeg"></div>
-                        <div><img src="images/236842611_240825264569235_4755190261295240765_n.jpeg"></div>
-                        <div><img src="images/19367367_188478358349333_5396590196554727424_n.jpeg"></div>
-                        <div><img src="images/20902014_872290182925357_4906452316896362496_n.jpeg"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of instagram section -->
     </main>
     <!-- end of main content-->
 
@@ -292,7 +274,7 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <h3>Daikie Moncion</h3>
+                    <h3>Ishinuki Daikie</h3>
                     <div><img src="images/20190203-DSC_2607.jpg"></div>
                 </div>
 
@@ -303,7 +285,6 @@
                         <li><a href="#work">Education</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact Me</a></li>
-                        <li><a href="#insta">Instagram</a></li>
                     </ul>
                 </div>
             </div>
@@ -312,32 +293,7 @@
     <!-- end of footer -->
     <!--- typewriting js-->
     <script src="typewriting-master/typewriting.js"></script>
-    <script src="https://www.twilio.com/libs/twilio/2.0.0/twilio.min.js"></script>
     <script>
-        /*
-        const accountSid = '***REMOVED-TWILIO-SID***';
-        const authToken = '***REMOVED-TWILIO-TOKEN***';
-        const client = require('twilio')(accountSid, authToken);
-
-        const form = document.getElementById('my-form');
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const name = document.getElementById('name-input').value;
-            const email = document.getElementById('email-input').value;
-            const phone = document.getElementById('phone-input').value;
-            const message = document.getElementById('message-input').value;
-            const body = `New form submission from ${name} with email ${email} phone number ${phone} and message ${message}`;
-
-            client.messages
-                .create({
-                    body: body,
-                    from: '+17853903789',
-                    to: '+14692749333'
-                })
-                .then(message => console.log(message.sid));
-        });
-*/
-
             let activeIndex = 0;
             const groups = document.querySelectorAll('.card-group');
 
